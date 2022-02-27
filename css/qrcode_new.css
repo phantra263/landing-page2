@@ -1,0 +1,48 @@
+* {
+	margin:0;
+	padding:0;
+}
+html {
+	font-family: sans-serif;
+	width: 100%;
+	height: 100%;
+}
+body {
+	background-color:whitesmoke;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.child-menu{
+    display: block;
+    border: 1px solid gray;
+    width: 100%;
+    padding: 5px;
+    position: relative;
+    color: gray;
+}
+.child-menu::after {
+	content: " >";
+	width: 1em;
+	height: 1em;
+	transition: all 0.35s;
+    margin: 0;
+    line-height: 1em;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 26px;
+}
+.div-child{
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    width: 95%;
+    margin-left: 2.5%;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.child-name{
+    display: block;
+    margin-bottom: 10px;
+}

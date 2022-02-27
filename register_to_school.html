@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>登園登録・欠席登録</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/font_icon.css" />
+    <link rel="stylesheet" type="text/css" href="css/loader.css" />
+    <link rel="stylesheet" type="text/css" href="css/register_to_school.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+
+  <body>
+    <div class="loader-wrap" style="display: none">
+      <div class="loader"></div>
+    </div>
+
+    <!--タイトル開始-->
+    <div id="header">
+      <img src="img/home.png" class="homeBtn menu_home" />
+      <span>登園登録・欠席登録</span>
+      <img src="img/menuBtn.png" class="menuBtn" />
+    </div>
+    <!-- タイトル終了 -->
+
+    <!-- メニュー開始 -->
+    <div class="menu_bg"></div>
+    <div class="sidebar_menu"></div>
+    <!-- メニュー終了 -->
+
+    <div id="content">
+      <!--ログインユーザ表示開始-->
+      <div class="div-content">
+        <div class="row d-flex">
+          <strong class="child-name">朱莉ちゃん</strong>
+          <p class="date-current">11月10日（水）</p>
+        </div>
+        <div class="row">
+          <img class="qrcode-img" src="img/websiteQRCode_noFrame.png" />
+        </div>
+        <div class="row">
+          <div class="div-1 div-1-title">園児の様子</div>
+          <div class="div-1 div-1-content">
+            <div class="row d-flex">
+              <label>登園前の食事</label>
+              <input type="text" />
+              <label>時頃</label>
+
+              <div class="switch-toggle switch-3 switch-candy">
+                <input id="on" name="state-d1" type="radio" checked="checked" />
+                <label for="on" onclick="">多め</label>
+
+                <input id="na" name="state-d1" type="radio" />
+                <label for="na" class="disabled" onclick="">普通</label>
+
+                <input id="off" name="state-d1" type="radio" />
+                <label for="off" onclick="">少な目</label>
+              </div>
+              <button>なし</button>
+            </div>
+            <div class="row" style="margin-top: 10px">
+              <label>登園前の排泄</label>
+            </div>
+            <div class="row">
+              <label class="label-circle label-circle-1">大</label>
+              <input type="text" />
+              <label>時頃</label>
+              <button>なし</button>
+              <label class="ml-30">体温</label>
+              <input type="text" />
+              <label>°C</label>
+            </div>
+            <div class="row">
+              <label class="label-circle label-circle-2">小</label>
+              <input type="text" />
+              <label>時頃</label>
+              <button>なし</button>
+            </div>
+            <div class="block-allergy">
+              <label>アレルギー</label>
+              <input type="text" />
+              <button>なし</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="div-1 div-2-title">持込内容</div>
+          <div class="div-1 div-2-content">
+            <div class="row">
+              <label style="display: block; float: left; width: 50px"
+                >食事</label
+              >
+              <div class="switch-toggle switch-3 switch-candy">
+                <input
+                  id="option1"
+                  name="state-d2"
+                  type="radio"
+                  checked="checked"
+                />
+                <label for="option1" onclick="">なし</label>
+
+                <input id="option2" name="state-d2" type="radio" />
+                <label for="option2" class="disabled" onclick="">あり</label>
+              </div>
+              <select name="cars" id="cars">
+                <option value="" selected disabled hidden></option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+            <div class="row">
+              <label style="display: block; float: left; width: 50px"
+                >ミルク</label
+              >
+              <div class="switch-toggle switch-3 switch-candy">
+                <input
+                  id="option3"
+                  name="state-d3"
+                  type="radio"
+                  checked="checked"
+                />
+                <label for="option3" onclick="">なし</label>
+
+                <input id="option4" name="state-d3" type="radio" />
+                <label for="option4" class="disabled" onclick="">あり</label>
+              </div>
+              <input type="text" />
+              <label>cc x</label>
+              <input type="text" />
+              <label>Ｃ分</label>
+            </div>
+            <div class="row">
+              <label style="display: block; float: left; width: 50px"
+                >おむつ</label
+              >
+              <div class="switch-toggle switch-3 switch-candy">
+                <input
+                  id="option5"
+                  name="state-d4"
+                  type="radio"
+                  checked="checked"
+                />
+                <label for="option5" onclick="">なし</label>
+
+                <input id="option6" name="state-d4" type="radio" />
+                <label for="option6" class="disabled" onclick="">あり</label>
+              </div>
+              <input type="text" />
+              <label>枚</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="div-3 div-3-title">園への依頼内容</div>
+          <div class="div-3 div-3-content">
+            <label>①～⑥は、依頼がある場合のみ入力して下さい</label>
+            <div class="s">
+              <div class="s-text">
+                <div class="s-text-content" onclick="onChange(1)">①離乳食</div>
+                <div class="s-text-event">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="white"
+                    class="bi bi-plus-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="s-border"></div>
+            </div>
+            <div id="panel1" class="panel-hide">
+              <div class="row">
+                <label class="has-circle has-mr">1</label>
+                <input type="text" />
+                <label>時頃</label>
+                <label class="ml-10">追加授乳</label>
+                <div class="switch-toggle switch-3 switch-candy">
+                  <input
+                    id="option7"
+                    name="state-d5"
+                    type="radio"
+                    checked="checked"
+                  />
+                  <label for="option7" onclick="">あり</label>
+                  <input id="option8" name="state-d5" type="radio" />
+                  <label for="option8" class="disabled" onclick="">なし</label>
+                </div>
+              </div>
+              <div class="row">
+                <label class="has-circle">2</label>
+                <button>なし</button>
+                <input type="text" />
+                <label>時頃</label>
+              </div>
+            </div>
+
+            <div class="s">
+              <div class="s-text">
+                <div class="s-text-content" onclick="onChange(2)">②ミルク</div>
+                <div class="s-text-event">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="white"
+                    class="bi bi-plus-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="s-border"></div>
+            </div>
+            <div id="panel2" class="panel-hide">
+              <div class="row">
+                <label>次回</label>
+                <input type="text" />
+                <label>時頃</label>
+                <label class="ml-10">以降</label>
+                <input type="text" />
+                <label>時間おき</label>
+              </div>
+            </div>
+            <div class="s">
+              <div class="s-text">
+                <div class="s-text-content" onclick="onChange(3)">
+                  ③トイレトレーニング
+                </div>
+                <div class="s-text-event">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="white"
+                    class="bi bi-plus-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="s-border"></div>
+            </div>
+            <div id="panel3" class="panel-hide">
+              <div class="row tab-content">
+                <div class="row">
+                  <div class="switch-toggle switch-3 switch-candy">
+                    <input
+                      id="option9"
+                      name="state-d6"
+                      type="radio"
+                      checked="checked"
+                    />
+                    <label for="option9" onclick="">あり</label>
+
+                    <input id="option10" name="state-d6" type="radio" />
+                    <label for="option10" class="disabled" onclick=""
+                      >なし</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s">
+              <div class="s-text">
+                <div class="s-text-content" onclick="onChange(4)">
+                  ④薬のお預かり
+                </div>
+                <div class="s-text-event">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="white"
+                    class="bi bi-plus-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="s-border"></div>
+            </div>
+            <div id="panel4" class="panel-hide">
+              <div class="row tab-content">
+                <label>お預かり内容</label>
+                <div class="row col-12 pl-10">
+                  <div class="col-3">
+                    <label>粉薬</label>
+                    <label class="container"
+                      >包
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-3">
+                    <label>外用薬</label>
+                    <label class="container"
+                      >個
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="col-6">
+                    <label>液薬(シロップ)</label>
+                    <div class="has-double">
+                      <label class="container"
+                        >CCを
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container"
+                        >個
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <label>与薬のご依頼</label>
+                  <div class="pl-10">
+                    <label class="label-panel4">量</label>
+                    <div class="switch-toggle switch-3 switch-candy ml-10">
+                      <input
+                        id="option11"
+                        name="state-d7"
+                        type="radio"
+                        checked="checked"
+                      />
+                      <label for="option11" onclick="">食前</label>
+                      <input id="option12" name="state-d7" type="radio" />
+                      <label for="option12" class="disabled" onclick=""
+                        >食間</label
+                      >
+                      <input id="option13" name="state-d7" type="radio" />
+                      <label for="option13" onclick="">食後</label>
+                      <input id="option14" name="state-d7" type="radio" />
+                      <label for="option14" onclick="">なし</label>
+                    </div>
+                  </div>
+                  <div class="row col-12 pl-55">
+                    <div class="col-3">
+                      <label class="label-panel4">粉薬</label>
+                      <label class="container"
+                        >包
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="col-3">
+                      <label>外用薬</label>
+                      <label class="container"
+                        >個
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="col-6">
+                      <label>液薬(シロップ)</label>
+                      <div class="has-double">
+                        <label class="container"
+                          >CCを
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="container"
+                          >個
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="pl-10">
+                    <label class="label-panel4">おやつ</label>
+                    <div class="switch-toggle switch-3 switch-candy ml-10">
+                      <input
+                        id="option21"
+                        name="state-d11"
+                        type="radio"
+                        checked="checked"
+                      />
+                      <label for="option21" onclick="">食前</label>
+                      <input id="option22" name="state-d11" type="radio" />
+                      <label for="option23" class="disabled" onclick=""
+                        >食間</label
+                      >
+                      <input id="option24" name="state-d11" type="radio" />
+                      <label for="option24" onclick="">食後</label>
+                      <input id="option25" name="state-d11" type="radio" />
+                      <label for="option25" onclick="">なし</label>
+                    </div>
+                  </div>
+                  <div class="row col-12 pl-55">
+                    <div class="col-3">
+                      <label>粉薬</label>
+                      <label class="container"
+                        >包
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="col-3">
+                      <label>外用薬</label>
+                      <label class="container"
+                        >個
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="col-6">
+                      <label>液薬(シロップ)</label>
+                      <div class="has-double">
+                        <label class="container"
+                          >CCを
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="container"
+                          >個
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="pl-10">
+                    <label class="label-panel4">夕</label>
+                    <div class="switch-toggle switch-3 switch-candy ml-10">
+                      <input
+                        id="option26"
+                        name="state-d12"
+                        type="radio"
+                        checked="checked"
+                      />
+                      <label for="option26" onclick="">食前</label>
+                      <input id="option27" name="state-d12" type="radio" />
+                      <label for="option27" class="disabled" onclick=""
+                        >食間</label
+                      >
+                      <input id="option28" name="state-d12" type="radio" />
+                      <label for="option28" onclick="">食後</label>
+                      <input id="option29" name="state-d12" type="radio" />
+                      <label for="option29" onclick="">なし</label>
+                    </div>
+                  </div>
+                  <div class="row col-12 pl-55">
+                    <div class="col-3">
+                      <label>粉薬</label>
+                      <label class="container"
+                        >包
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="col-3">
+                      <label>外用薬</label>
+                      <label class="container"
+                        >個
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="col-6">
+                      <label>液薬(シロップ)</label>
+                      <div class="has-double">
+                        <label class="container"
+                          >CCを
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                        <label class="container"
+                          >個
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s">
+              <div class="s-text">
+                <div class="s-text-content" onclick="onChange(5)">
+                  ⑤追加の食事
+                </div>
+                <div class="s-text-event">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="white"
+                    class="bi bi-plus-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="s-border"></div>
+            </div>
+            <div id="panel5" class="panel-hide">
+              <div class="row">
+                <label style="display: block; text-align: center; width: 50px"
+                  >朝</label
+                >
+                <div class="switch-toggle switch-3 switch-candy">
+                  <input
+                    id="option15"
+                    name="state-d8"
+                    type="radio"
+                    checked="checked"
+                  />
+                  <label for="option15" onclick="">あり</label>
+
+                  <input id="option16" name="state-d8" type="radio" />
+                  <label for="option16" class="disabled" onclick="">なし</label>
+                </div>
+                <select class="ml-10 border-green" name="cars" id="cars">
+                  <option value="" selected disabled hidden></option>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+              <div class="row">
+                <label style="display: block; text-align: center; width: 50px"
+                  >昼</label
+                >
+                <div class="switch-toggle switch-3 switch-candy">
+                  <input
+                    id="option17"
+                    name="state-d9"
+                    type="radio"
+                    checked="checked"
+                  />
+                  <label for="option17" onclick="">あり</label>
+
+                  <input id="option18" name="state-d9" type="radio" />
+                  <label for="option18" class="disabled" onclick="">なし</label>
+                </div>
+                <select class="ml-10 border-green" name="cars" id="cars">
+                  <option value="" selected disabled hidden></option>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+              <div class="row">
+                <label style="display: block; text-align: center; width: 50px"
+                  >おやつ</label
+                >
+                <div class="switch-toggle switch-3 switch-candy">
+                  <input
+                    id="option19"
+                    name="state-d10"
+                    type="radio"
+                    checked="checked"
+                  />
+                  <label for="option19" onclick="">あり</label>
+
+                  <input id="option20" name="state-d10" type="radio" />
+                  <label for="option20" class="disabled" onclick="">なし</label>
+                </div>
+                <select class="ml-10 border-green" name="cars" id="cars">
+                  <option value="" selected disabled hidden></option>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+              <div class="row">
+                <label style="display: block; text-align: center; width: 50px"
+                  >夕</label
+                >
+                <div class="switch-toggle switch-3 switch-candy">
+                  <input
+                    id="option30"
+                    name="state-d14"
+                    type="radio"
+                    checked="checked"
+                  />
+                  <label for="option30" onclick="">あり</label>
+
+                  <input id="option31" name="state-d14" type="radio" />
+                  <label for="option31" class="disabled" onclick="">なし</label>
+                </div>
+                <select class="ml-10 border-green" name="cars" id="cars">
+                  <option value="" selected disabled hidden></option>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="opel">Opel</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </div>
+            </div>
+            <div class="s">
+              <div class="s-text">
+                <div class="s-text-content" onclick="onChange(6)">
+                  ⑥伝達事項・要望
+                </div>
+                <div class="s-text-event">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="white"
+                    class="bi bi-plus-circle-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="s-border"></div>
+            </div>
+            <div id="panel6" class="panel-hide">
+              <button>なし</button>
+              <textarea rows="3"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row btn-footer">
+          <button class="btn-left">登録を完了する</button>
+          <button class="btn-right">登録せず終了する</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop"></div>
+    <div class="loading-container">
+      <div class="loading"></div>
+    </div>
+
+    <!-- <script type="text/javascript" src="cordova.js"></script> -->
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/config.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/register_to_school.js"></script>
+  </body>
+</html>

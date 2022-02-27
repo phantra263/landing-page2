@@ -1,0 +1,364 @@
+* {
+	margin:0;
+	padding:0;
+}
+html {
+	font-family: sans-serif;
+	width: 100%;
+	height: 100%;
+    font-size: x-small;
+}
+body {
+	background-color:whitesmoke;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+.div-content{
+    padding: 10px;
+}
+.row{
+    display: block;
+    margin-bottom: 5px;
+}
+.col-12{
+    display: block;
+    float: left;
+    width: 100%;
+}
+.col-6{
+    display: block;
+    float: left;
+    width: 50%;
+}
+.col-3{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.col-2{
+    display: block;
+    float: left;
+    width: 16.6666666667%;
+}
+.col-4{
+    display: block;
+    float: left;
+    width: 33.3333333333%;
+}
+.col-8{
+    display: block;
+    float: left;
+    width: 66.6666666667%;
+}
+.child-name{
+    font-size: 16px;
+}
+.date-current{
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: right;
+    font-size: 16px;
+}
+.qrcode-img{
+    width: 100px;
+    height: 100px;
+}
+.div-1{
+    background-color: #fffebd;
+    border: 1px solid #ffd141;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.div-3{
+    background-color: #e1ffef;
+    border: 1px solid #4ec67e;
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+input{
+    border: 1px solid #ffd141;
+    width: 50px;
+    padding: 2px;
+    border-radius: 3px;
+}
+button{
+    padding: 3px 7px;
+    font-size: 10px;
+    line-height: 1;
+    border: 1px solid #7f8183;
+    border-radius: 3px;
+}
+.switch-toggle {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+ }
+ .switch-toggle input {
+   position: absolute;
+   opacity: 0;
+ }
+ .switch-toggle input + label {
+   padding: 3px 7px;
+   color: #C9D0D3;
+   cursor: pointer;
+   border-radius: 3px;
+   border: 1px solid #7f8183;
+   background: #DCF2F8;
+ }
+ .switch-toggle input:checked + label {
+   background: #00A2A8; 
+   color: #fff;
+ }
+.label-circle{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+}
+.d-flex {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+select {
+    width: 80px;
+    border: 1px solid #ffd141;
+    padding: 2px;
+    border-radius: 3px;
+    outline: none;
+    position: relative;
+    background: #fff;
+}
+select::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 21px;
+    border: 1px solid #ffd141;
+    right: 0;
+}
+.has-circle {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    background: #6666FF;
+    color: #fff;
+    border-radius: 50%;
+}
+.has-circle.has-mr {
+    margin-right: 40px;
+}
+.label-circle-1{
+    background: #cc0000;
+}
+.label-circle-2{
+    background: #68cbfe;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.block-allergy {
+    display: flex;
+    align-items: stretch;
+}
+.block-allergy input {
+    flex: 1;
+    margin-left: 10px;
+}
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+.container input[type='checkbox'] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  /* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #00b050;
+    border-radius: 3px;
+  }
+  /* When the checkbox is checked, add a blue background */
+.container input[type='checkbox']:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  /* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+/* Show the checkmark when checked */
+.container input[type='checkbox']:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.has-double .container {
+    display: inline-block;
+    margin-right: 3px;
+}
+.pl-10 {
+    padding-left: 10px;
+}
+.pl-55 {
+    padding-left: 55px;
+}
+.btn-footer{
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 20px;
+}
+.btn-left{
+    display: block;
+    float: left;
+    color: #fff;
+    background-color: #0070c0;
+    margin-left: 10px;
+    border-radius: 3px;
+    border: none;
+    padding: 8px 10px 6px;
+}
+.btn-right{
+    display: block;
+    float: right;
+    color: #fff;
+    background-color: #ed7c30;
+    margin-right: 10px;
+    border-radius: 3px;
+    border: none;
+    padding: 8px 10px 6px;
+}
+
+/* Accordion styles */
+.s {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0 5px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s-text {
+    width: 200px;
+    height: 30px;
+    background-color: #00b050;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s-text-index {
+    width: 30px;
+    margin: 0 0 0 10px;
+}
+
+.s-text-number {
+    position: absolute;
+    color: white;
+    left: 27px;
+    margin: 2px 0 0 0;
+}
+
+.s-text-content {
+    display: block;
+    width: 100%;
+    font-size: x-small;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.s-text-event {
+    padding-top: 8px;
+}
+
+.s-border {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #00b050;
+    border-bottom: 15px solid transparent;
+}
+
+.panel-hide {
+    display: none;
+}
+
+.panel-show {
+    display: block;
+    margin: 5px;
+}
+#panel4 .label-panel4 {
+    width: 30px;
+    display: inline-block;
+}
+
+#panel5 .row{
+    display: flex;
+    align-items: center;
+}
+textarea {
+    resize: none;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    border: 1px solid #00b050;
+    border-radius: 3px;
+}
+#panel6 {
+    position: relative;
+    top: -15px;
+}
+#panel6 button {
+    float: right;
+    margin-bottom: 3px;
+    background: #00A2A8; 
+    color: #fff;
+}
+.border-green {
+    border: 1px solid #00b050;
+}

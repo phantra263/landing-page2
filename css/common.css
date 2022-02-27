@@ -1,0 +1,437 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-webkit-text-size-adjust: 100% 
+	touch-action: manipulation;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	font: inherit;
+	font-family: "MS ゴシック",sans-serif;
+	font-size: 100%;
+	background: transparent;
+	list-style: none;
+	box-sizing: border-box;
+	line-height: 20px;
+	background-color: #f5f5f5;
+}
+
+body {
+	overflow-x: hidden;
+	-webkit-text-size-adjust: 100%;
+}
+
+/* 左上ホームボタン */
+.homeBtn{
+	border: solid 1px black;
+	border-radius:5px;
+	height: 30px;
+	float: left;
+	margin: 3px;
+	display:inline-block;
+}
+
+#header{
+	background-color:#444444;
+
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+	min-height:40px;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	top: 0;
+	left:0;
+}
+
+#header span{
+	width:calc(100% - 80px);
+	display:inline-block;
+	float: left;
+	padding-top: 10px;
+}
+
+#content {
+	padding-top: 40px;
+}
+
+/* 右上メニューボタン */
+.menuBtn{
+	border: solid 1px black;
+	border-radius:5px;
+	height: 30px;
+	float: right;
+	margin: 3px;
+	display:inline-block;
+}
+
+.menu_wrap{
+	list-style: none;
+	padding: 0;
+}
+
+.menu_wrap li a{
+	text-decoration: none;
+	text-align: left;
+	display: flex;
+}
+
+.menu_wrap li a span.menu_title{
+	font-weight: normal;
+	margin-top: 5px;
+}
+
+.sidebar_menu{
+	display: none;
+	width: 80%;
+	height: 100%;
+	background: #333333;
+/*	position: absolute;	*/
+	position: fixed;
+	top:0;
+	right: -50%;
+	color:black;
+	z-index: 4;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.close_btn{
+	width: 25px;
+	height: 25px;
+	margin:10px;
+}
+
+.close_btn a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.menu_bg{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 3;
+}
+
+.item {
+	padding: 12px;
+	font-size: 15px;
+	border-color: #eee;
+	background-color: #fff;
+	position: relative;
+	z-index: 2;
+	margin: -1px;
+	border-width: 1px;
+	border-style: solid;
+}
+
+
+.error_message {
+	font-size: 14px;
+	color: #ff0000;
+	text-align: center;
+	margin: 0;
+}
+
+/**
+ * feed-icon
+ * --------------------------------------------------
+ */
+.feed-icon {
+	width: 25px;
+	height: 25px;
+	line-height: 24px;
+	border: 2px solid #FFF;
+	border-radius: 100px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+	display: inline-block;
+	text-align: center;
+	color: #FFF;
+	background: #999;
+	margin-top: 2px;
+	margin-right: 2px;
+}
+.feed-icon i {
+	width: 20px;
+	font-size: 14px;
+	margin: 0 !important;
+	vertical-align: top;
+	line-height: 1.6;
+}
+.feed-icon.feed-icon-positive {
+	background: #02b3d0; 
+}
+.feed-icon.feed-icon-red {
+	background: #eb6a7a;
+}
+.feed-icon.feed-icon-orange {
+	background: #fe7a27;
+}
+.feed-icon.feed-icon-blue {
+	background: #02b3d0;
+}
+.feed-icon.feed-icon-darkblue {
+	background: #2744e9;
+}
+.feed-icon.feed-icon-navy {
+	background: #5f6c90;
+}
+.feed-icon.feed-icon-green {
+	background: #84a819;
+}
+.feed-icon.feed-icon-yellowgreen {
+	background: #beeb39;
+}
+.feed-icon.feed-icon-yellow {
+	background: #ffd700;
+}
+.feed-icon.feed-icon-redpurple {
+	background: #ce225b;
+}
+.feed-icon.feed-icon-purple {
+	background: #A757A8;
+}
+.feed-icon.feed-icon-darkorange {
+	background: #cf4f14;
+}
+.feed-icon.feed-icon-white {
+	background: #fff;
+}
+/* 以下ionic.app.cssから */
+
+@font-face {
+	font-family: 'icomoon';
+	src: url("../fonts/icomoon.eot?h72wyl");
+	src: url("../fonts/icomoon.eot?h72wyl#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?h72wyl") format("truetype"), url("../fonts/icomoon.woff?h72wyl") format("woff"), url("../fonts/icomoon.svg?h72wyl#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icomoon-"], [class*=" icomoon-"] {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icomoon-edit:before {
+	content: "\e800";
+}
+
+.icomoon-location:before {
+	content: "\e801";
+}
+
+.icomoon-suitcase:before {
+	content: "\e802";
+}
+
+.icomoon-location-pin:before {
+	content: "\e803";
+}
+
+.icomoon-calendar:before {
+	content: "\e804";
+}
+
+.icomoon-info-with-circle:before {
+	content: "\e805";
+}
+
+.icomoon-phone:before {
+	content: "\e806";
+}
+
+.icomoon-user:before {
+	content: "\e807";
+}
+
+.icomoon-chevron-left:before {
+	content: "\e808";
+}
+
+.icomoon-chevron-right:before {
+	content: "\e809";
+}
+
+.icomoon-open-book:before {
+	content: "\e80a";
+}
+
+.icomoon-board:before {
+	content: "\e80b";
+}
+
+.icomoon-megaphone:before {
+	content: "\e80c";
+}
+
+.icomoon-old-mobile:before {
+	content: "\e80d";
+}
+
+.icomoon-price-ribbon:before {
+	content: "\e80e";
+}
+
+.icomoon-slideshare:before {
+	content: "\e80f";
+}
+
+.icomoon-clock:before {
+	content: "\e810";
+}
+
+.icomoon-address:before {
+	content: "\e811";
+}
+
+.icomoon-colours:before {
+	content: "\e812";
+}
+
+.icomoon-clipboard:before {
+	content: "\e813";
+}
+
+.icomoon-map:before {
+	content: "\e814";
+}
+
+.icomoon-calculator:before {
+	content: "\e815";
+}
+
+.icomoon-key:before {
+	content: "\e816";
+}
+
+.icomoon-locked:before {
+	content: "\e817";
+}
+
+.icomoon-warning:before {
+	content: "\e900";
+}
+
+.icomoon-question-circle-o:before {
+	content: "\e901";
+}
+
+.icomoon-credit-card:before {
+	content: "\e93f";
+}
+
+.icomoon-close:before {
+	content: "\f00d";
+}
+
+.icomoon-home:before {
+	content: "\f015";
+}
+
+.icomoon-clock-o:before {
+	content: "\f017";
+}
+
+.icomoon-list:before {
+	content: "\f03a";
+}
+
+.icomoon-arrow-bottom:before {
+	content: "\f062";
+}
+
+.icomoon-arrow-right:before {
+	content: "\f061";
+}
+
+.icomoon-plus:before {
+	content: "\f067";
+}
+
+.icomoon-minus:before {
+	content: "\f068";
+}
+
+.icomoon-calendar2:before {
+	content: "\f073";
+}
+
+.icomoon-thumbs-o-up:before {
+	content: "\f087";
+}
+
+.icomoon-briefcase:before {
+	content: "\f0b1";
+}
+
+.icomoon-group:before {
+	content: "\f0c0";
+}
+
+.icomoon-calendar-o:before {
+	content: "\f133";
+}
+
+.icomoon-chevron-circle-right:before {
+	content: "\f138";
+}
+
+.icomoon-chevron-circle-down:before {
+	content: "\f13a";
+}
+
+.icomoon-check-square:before {
+	content: "\f14a";
+}
+
+.icomoon-usd:before {
+	content: "\f155";
+}
+
+.icomoon-bank:before {
+	content: "\f19c";
+}
+
+.icomoon-graduation-cap:before {
+	content: "\f19d";
+}
+
+.icomoon-file-pdf-o:before {
+	content: "\f1c1";
+}
+
+.icomoon-bus:before {
+	content: "\f207";
+}
+
+.icomoon-subway:before {
+	content: "\f239";
+}

@@ -1,0 +1,109 @@
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+	list-style: none;
+}
+
+table {
+	margin: 0 auto;
+}
+
+#header>span{
+	width:100%;
+}
+.iconImg{
+	height:30px;
+	margin-right:5px;
+}
+#input_form{
+	text-align:center;
+	width: 100%;
+	margin-top: 90px;
+}
+.inputLogin{
+	width: 80%;
+	text-align: left;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+#loginBtn{
+	margin-top:15px;
+	width:16em;
+	height:40px;
+	font-size:1em;
+}
+#loginKeepBox{
+	margin: 0 auto;
+	margin-top:20px;
+	border:solid 1px lightgrey;
+	width:15em;
+	background-color:white;
+	border-radius:5px;
+	padding:5px;
+}
+#keepText{
+	cursor:pointer;
+}
+.inputArea{
+	width:60%;
+	margin: 5px auto;
+}
+.inputBox{
+	width: 100%;
+}
+
+.iconImg{
+	height:24px;
+	vertical-align:middle;
+	margin-left:5px;
+}
+
+button, fieldset, form, input, label, legend, select, textarea {
+	font-family: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	vertical-align: top;
+}
+
+.loginTxt {
+	background-color: #ffdddd !important;
+	vertical-align: middle;
+	display: inline-block;
+	margin-bottom: 0;
+	padding-bottom: 3px !important;
+	padding-top: 3px !important;
+	border-radius: 4px;
+	margin-right: 2px;
+	border-color: #ccc !important;
+	box-shadow: inset 0 1px 3px rgb(0 0 0 / 10%), 0 1px 0 #fafafa;
+}
+
+input[type="password"], input[type="text"], select, textarea {
+	-webkit-transition: border linear 0.3s, box-shadow linear 0.2s;
+	padding: 2px 5px 1px 5px;
+	line-height: normal;
+	border: 1px solid #BDC7D8;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 0 #FAFAFA;
+	border-radius: 4px;
+}
+
+#loginBtn{
+	border-color: #02889d;
+	background-color: #02b3d0;
+	background-image: linear-gradient(#02b3d0, #029db7);
+	color: #fff;
+	opacity: .4;
+	cursor: default !important;
+}
+
+.loginLink{
+	color: #02b3d0;
+}
+

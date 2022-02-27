@@ -1,0 +1,140 @@
+html {
+	font-family: sans-serif;
+	width: 100%;
+/*	height: 100%;	*/
+}
+
+body {
+	font-size: 15px;
+	line-height: 1.15;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+th, div{
+	font-weight: inherit;
+	line-height: inherit;
+}
+
+td {
+	border-color: grey;
+	border: 1px solid grey;
+	text-align: center;
+	vertical-align:  middle;
+	width: 100px;
+	height: 50px;
+}
+
+button {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 1.42857;
+    margin: 0;
+}
+
+p {
+	margin: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+	list-style: none;
+}
+
+.col1 {
+	width: 25%;
+}
+.col2 {
+	width: 18%;
+}
+.col3 {
+	width: 12%;
+}
+.col4 {
+	width: 19%;
+}
+.col5 {
+	width: 26%;
+}
+
+.col {
+	border: 1px solid grey;
+}
+
+.col div {
+	vertical-align: middle;
+}
+
+#decrement,#increment{
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	padding: 0 1em;
+	position: relative;
+	box-sizing: border-box;
+	margin: 0;
+	height: 2.1em;
+	font-size: 1em;
+	white-space: nowrap;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	color: #333;
+}
+
+#decrement {
+	display: block;
+	float: left;
+
+}
+
+#increment{
+	display: block;
+	float: right;
+}
+
+#settlement_year{
+	display: inline-block;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 3px;
+}
+
+.tbl_year {
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.tbl_main {
+	margin-top: 25px;
+}
+
+.fc-icon {
+	height: 2em;
+	line-height: 2em;
+}
+
+.fc-icon-left-single-arrow {
+	font-family: 'icomoon';
+}
+
+.fc-icon-left-single-arrow:after {
+	content: "\e808";
+	font-size: 20px;
+}
+
+.fc-icon-right-single-arrow {
+	font-family: 'icomoon';
+}
+
+.fc-icon-right-single-arrow:after {
+	content: "\e809";
+	font-size: 20px;
+}
+

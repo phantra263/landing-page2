@@ -1,0 +1,23 @@
+.member_child_info_btn {
+	width: 70%;
+	color: #ffffff;
+	height: 40px;
+	vertical-align: baseline;
+	padding-top: 5px;
+	padding-left: 20px;
+	border-radius: 8px;
+	margin-top: 30px;
+	font-size: 18px;
+	text-shadow: 0 1px #444444;
+	text-align: left;
+	box-shadow: 0 1px #444444;
+}
+.member_child_info_btn.red{
+	background-color: #ff0000;
+}
+.member_child_info_btn.green{
+	background-color: #00b43b;
+}
+.member_child_info_btn.blue{
+	background-color: #00a5ef;
+}

@@ -1,0 +1,13 @@
+.newLabel {
+	-webkit-appearance: none;
+  color: #ffffff;
+	background-color: red;
+	height: 20px;
+	vertical-align: baseline;
+	padding-top: 2px;
+	border-radius: 5px;
+	font-size: 11px;
+	float: right;
+  padding-left:3px;
+  padding-right:3px;
+}

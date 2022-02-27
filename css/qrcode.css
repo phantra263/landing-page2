@@ -1,0 +1,20 @@
+
+#get_qr_code_test_body {
+	min-height: 40px;
+}
+
+.child_qr {
+	text-align: center;
+	margin-top: 65px;
+}
+
+.child_name {
+	text-align: center;
+	margin-top: 15px;
+	color: #02b3d0;
+	text-decoration: underline;
+}
+
+.nodisp {
+	display: none;
+}

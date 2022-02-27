@@ -1,0 +1,33 @@
+.btn_finish {
+	width: 50%;
+	color: #ffffff;
+	background-color: #8bc600;
+	height: 38px;
+	text-align: center;
+	vertical-align: baseline;
+	padding-top: 8px;
+	border-radius: 8px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 2%;
+	font-size: 16px;
+	box-shadow: 0 1px #444444;
+	float: left;
+}
+
+.btn_modify {
+	width: 30%;
+	color: #ffffff;
+	background-color: #fd8066;
+	height: 38px;
+	text-align: center;
+	vertical-align: baseline;
+	padding-top: 8px;
+	border-radius: 8px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-right: 2%;
+	font-size: 16px;
+	box-shadow: 0 1px #444444;
+	float: right;
+}

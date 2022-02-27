@@ -1,0 +1,42 @@
+.registBtn {
+	font-family: inherit;
+	font-style: inherit;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	vertical-align: top;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1.42857;
+	text-align: center;
+	width: 20%;
+	margin-left: 40%;
+	margin-top: 10px;
+	padding: 6px;
+}
+
+.registBtn{
+	color: white;
+	border-radius : 6px;
+	border: 1px solid;
+	border-color : #84a819;
+	height: 34px;
+	font-weight: bold;
+	text-shadow: 0 1px #444444;
+	box-shadow: 0 1px #444444;
+	background: #84a819;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	font: inherit;
+	font-size: 100%;
+}
+

@@ -1,0 +1,28 @@
+.contract_menu_btn {
+	width: 70%;
+	color: #ffffff;
+	height: 40px;
+	vertical-align: baseline;
+	padding-top: 10px;
+	border-radius: 8px;
+	margin-top: 30px;
+	font-size: 18px;
+	text-shadow: 0 1px #444444;
+	box-shadow: 0 1px #444444;
+}
+.contract_menu_btn.red{
+	background-color: #ff0000;
+}
+.contract_menu_btn.green{
+	background-color: #00b43b;
+}
+.contract_menu_btn.blue{
+	background-color: #00a5ef;
+}
+#group1 {
+	padding-bottom: 50px;
+	border-bottom: #c1c1c1 1px solid;
+}
+#group2 {
+	margin-top: 40px;
+}

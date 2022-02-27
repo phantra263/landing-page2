@@ -1,0 +1,716 @@
+.registUserInfoBtn {
+	-webkit-appearance: none;
+	color: #ffffff;
+	background-color: #8bc600;
+	height: 30px;
+	text-align: center;
+	vertical-align: baseline;
+	padding-top: 3px;
+	border-radius: 8px;
+	font-size: 16px;
+	box-shadow: 0 1px #444444;
+	border-radius: 8px;
+	border :solid 1px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding-left:3px;
+	padding-right:3px;
+}
+.editStartBtn {
+	-webkit-appearance: none;
+	color: #ffffff;
+	background-color: #8bc600;
+	height: 32px;
+	vertical-align: baseline;
+	padding-top: 1px;
+	border-radius: 8px;
+	font-size: 16px;
+	box-shadow: 0 1px #444444;
+	border-radius: 8px;
+	border :solid 1px;
+	margin-left: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 2px;
+}
+.cancelUserInfoBtn ,.menuBackBtn {
+	-webkit-appearance: none;
+	color: #ffffff;
+	background-color: #fd8066;
+	height: 30px;
+	text-align: center;
+	vertical-align: baseline;
+	padding-top: 3px;
+	border-radius: 8px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	font-size: 16px;
+	box-shadow: 0 1px #444444;
+	border-radius: 8px;
+	border :solid 1px;
+	padding-left:3px;
+	padding-right:3px;
+}
+.menuBackBtn {
+	-webkit-appearance: none;
+	color: #ffffff;
+	background-color: #fd8066;
+	height: 32px;
+	text-align: center;
+	vertical-align: baseline;
+	padding-top: 3px;
+	border-radius: 8px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	font-size: 16px;
+	box-shadow: 0 1px #444444;
+	border-radius: 8px;
+	border :solid 1px;
+}
+.nasiBtn {
+	-webkit-appearance: none;
+	margin-left:3px;
+	margin-right:3px;
+	color:#000000;
+	border-radius : 6px;
+	border : 1px solid;
+	height:22px;
+}
+#submitArea {
+	text-align: right;
+	display:block;
+}
+.tableLine-top {
+    width:100%;
+    min-height:35px;
+    display:table;
+    border-top:1px solid grey;
+    border-bottom:1px solid grey;
+    border-right:1px solid grey;
+    position:relative;
+}
+.tableLine {
+    width:100%;
+    min-height:35px;
+    display:table;
+    border-bottom:1px solid grey;
+    border-right:1px solid grey;
+    position:relative;
+}
+.subTableLine {
+    width:100%;
+    min-height:35px;
+    display:table;
+}
+.titleCell,.inputCell,.msgCell {
+    border:1px solid grey;
+    border-bottom: none;
+    border-top:0;
+    box-sizing:border-box;
+    overflow-y: visible;
+    display:table-cell;
+    vertical-align:middle;
+    text-align: center;
+    font-size: small;
+}
+.inputCell {
+    border-left:1px solid grey;
+    font-size: small;
+}
+.subInputCell {
+    border-top: 0;
+    border-bottom: 3px;
+    margin-left: 10px;
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: small;
+}
+.tableLine>span {
+    height:35px;
+    border:0px solid grey;
+    font-size: xx-small;
+}
+.titleCell {
+    background-color:lightgrey;
+    width:21%;
+    text-align: center;
+    border-right: 1px none white;
+    font-weight: bold;
+}
+.subTitleCell {
+    background-color: transparent;
+    text-align: left;
+    font-weight: bold;
+    border-top:0;
+    border-bottom: 0;
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 1px;
+    font-size: small;
+}
+.paragraphHeader-right {
+    text-align:right;
+}
+.paragraphHeader-left {
+    text-align:left;
+    float:left;
+}
+.iconImg {
+    height:24px;
+    vertical-align:middle;
+    margin-left:5px;
+}
+.paragraphHeader {
+    background-color:transparent;
+    border:solid 1px;
+    width:100%;
+    min-height:32px;
+    box-sizing: border-box
+}
+.paragraphHeader>div>span {
+    vertical-align:middle;
+    margin-left:5px;
+    font-weight:bold;
+}
+.blueBtn {
+    color:white;
+    font-weight:bold;
+    background-color:#3c93d8;
+    border-radius : 3px;
+    border : 1px solid;
+    border-color : blue;
+    text-shadow:0 1px #444444;
+    box-shadow:0 1px #444444;
+    background:linear-gradient(to top,#2582df,#3c84cc);
+    height:26px;
+}
+.scrollBtn {
+    border: solid 2px gray;
+    background-color: white;
+    margin-top:5px;
+    border-radius:5px;
+}
+.inputTypeMark {
+    width:2%;
+    border-top:0;
+    box-sizing:border-box;
+    display:table-cell;
+    vertical-align:middle;
+    border-left: 0px none white;
+    background-color:lightgrey;
+    border: 2px solid lightgray;
+}
+.inputTypeMark.requireItem {
+    background-color:#c00;
+}
+.textInput {
+    width:95%;
+    box-sizing:border-box;
+}
+.inputBox {
+    border-radius:5px;
+    border: solid 1px;
+    border-color: lightgrey;
+    font-size:1.05em;
+    margin-top:5px;
+}
+.requireInput{
+    background-color:MistyRose;
+}
+.postalBox{
+    border-radius : 5px;
+    border: solid 1px;
+    border-color: lightgrey;
+    width:40%;
+    box-sizing:border-box;
+    vertical-align: middle;
+    font-size:1.05em;
+}
+.postalButton{
+    background-color: whiteSmoke;
+    border-radius : 5px;
+    position : relative;
+    right : 2px;
+    border : 1px solid;
+    border-color : lightgrey;
+    box-sizing:border-box;
+    vertical-align: middle;
+    font-size:0.95em;
+}
+div.shortInputBox {
+    display:inline-block;
+    width:95%;
+    text-align:left;
+    border:0;
+}
+input[type=checkbox].beforeBirth {
+    display:inline-block;
+}
+input[type=checkbox].customCheckBox,input[type=radio].customCheckBox {
+    border: 2px solid lightgrey;
+}
+input[type=checkbox].customCheckBox:checked,input[type=checkbox].customCheckBox:indeterminate,input[type=radio].customCheckBox:checked:before {
+    border: 2px solid #2196f3;
+    background: #2196f3;
+}
+.existBtn_left {
+    display:inline-block;
+    border: solid 1px grey;
+    border-radius: 5px 0 0 5px;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+}
+.existBtn_center {
+    display:inline-block;
+    border:solid 1px grey;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+}
+.existBtn_right {
+    display:inline-block;
+    border:solid 1px grey;
+    border-radius: 0 5px 5px 0;
+    text-align:center;
+    height:30px;
+    line-height:30px;
+}
+.hiddenRadio {
+    display:none;
+}
+textarea {
+    resize: auto;
+    max-width: 300px;
+    max-height: 100px;
+    min-width: 250px;
+    min-height: 60px;
+    width:250px;
+    height:60px
+}
+select {
+    height:25px;
+    border-radius:5px;
+    border: solid 1px;
+    border-color: lightgrey;
+}
+input[type=checkbox] {
+    display: none;
+}
+.inputTable {
+	width:100%;
+}
+/* NGなら赤くする */
+form input:focus:invalid {
+	border : tomato 2px solid;
+}
+/* 操作中、入力値が正しい場合は、不正エラーを消す */
+form input:focus:valid + .error .invalid {
+	display : none;
+}
+span.tel_caution_text{
+	font-size:9px;
+	border:0;
+}
+.item-list {
+	display: flex;
+	justify-content: left; /* 中央寄せ */
+}
+.item-list .item{
+	box-sizing: border-box;
+	padding-top: 2px;
+	padding-left: 0px;
+	padding-right:0px;
+	padding-bottom:0px;
+}
+.childImg {
+	width:100px;
+	height:100px;
+}
+span.invalid {
+	font-weight: bold;
+	color:#f00;
+	height:20px;
+}
+/*タブ手法１*/
+.tab-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin:10px 0;
+}
+.tab-wrap:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #325A8C;
+    display: block;
+    order: -1;
+}
+.tab-label {
+    color: White;
+    background: LightGray;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+    padding: 3px .5em;
+    order: -1;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    flex: 1;
+    font-size:small
+}
+.tab-label:not(:last-of-type) {
+    margin-right: 5px;
+}
+.tab-content {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+.tab-switch:checked+.tab-label {
+    background: #325A8C;
+}
+.tab-switch:checked+.tab-label+.tab-content {
+    height: auto;
+    overflow: auto;
+    padding: 15px;
+    opacity: 1;
+    transition: .5s opacity;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.tab-switch {
+    display: none;
+}
+.tab-switch:checked+.tab-label:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #325a8c;
+    border-width: 14px;
+    margin-left: -14px;
+}
+.tab-switch:checked + .tab-label {
+    background: #325A8C;
+    position: relative;
+}
+.cp_actab {
+	overflow: hidden;
+	width: 100%;
+	height:auto;
+	margin: 0 auto;
+	color: #ffffff;
+}
+.cp_actab input {
+	z-index: -1;
+}
+.cp_actab label.accordionLabel {
+	line-height: 2;
+	display: block;
+	background: transparent;
+	font-size:18px;
+	color:#000000;
+}
+.cp_actab .cp_actab-content{
+	overflow-x: hidden;
+	overflow-y: auto;
+	max-height: 0;
+	-webkit-transition: max-height 0.35s;
+	transition: max-height 0.35s;
+	color: #333333;
+	margin-top: 0px;
+}
+.tabInfo{
+	height:100%;
+}
+.cp_actab-content.update,.cp_actab label.accordionLabel.update{
+	display: none;
+}
+.cp_actab label.accordionLabel.update{
+	text-align: left;
+	line-height: 2;
+}
+label#basicTabLabel.accordionLabel.update{
+	margin-right: 60px;
+}
+
+.cp_actab .cp_actab-content p {
+	margin: 1em;
+}
+/* :checked */
+.cp_actab input:checked ~ .cp_actab-content {
+	max-height: none;
+}
+/* Icon */
+.cp_actab label::after {
+	line-height: 3;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 3em;
+	height: 3em;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+	text-align: center;
+}
+.cp_actab input[type=checkbox] + label.accordionLabel::after {
+	position: absolute;
+	content: "";
+	transition: all .4s;
+	width: 8px;
+	height: 8px;
+	border: 0px;
+	border-top: solid 2px white;
+	border-right: solid 2px white;
+	top: 46%;
+	left: 90%;
+}
+.cp_actab input[type=checkbox]:checked + label.accordionLabel::after {
+	top: 56%;
+}
+input[type=radio] {
+	display: none; /* ラジオボタンを非表示にする */
+}
+label.radioLabel,label.radioDisabled {
+	margin: 5px 2px 5px 0px; /* ラベル外側の余白を指定する */
+	border: 1px solid #006DD9;/* ラベルの境界線を実線で指定する */
+	display: block; /* ブロックレベル要素化する */
+	float: left; /* 要素の左寄せ・回り込を指定する */
+	height: 35px; /* ボックスの高さを指定する */
+	padding-left: 5px; /* ボックス内左側の余白を指定する */
+	padding-right: 5px; /* ボックス内御右側の余白を指定する */
+	color: #111111;  /*フォントの色を指定 */
+	text-align: center; /* テキストのセンタリングを指定する */
+	line-height: 35px; /* 行の高さを指定する */
+	cursor: pointer; /* マウスカーソルの形（リンクカーソル）を指定する */
+	border: 2px solid lightgray;/* ボックスの境界線を実線で指定する */
+	border-radius: 5px; /* 角丸を指定する */
+	background-color: #ffffff;
+}
+label.radioDisabled{
+  background: whitesmoke;
+}
+input[type="radio"]:checked + label{
+	background: #31A9EE;/* マウス選択時の背景色を指定する */
+	color: #ffffff; /* マウス選択時のフォント色を指定する */
+}
+.radioLabelDm{
+	width: 100px;
+}
+.radioLabelSeibetsu{
+	width: 50px;
+}
+.radioLabelBlood{
+	width: 42px;
+}
+.radioLabelRh{
+	width: 45px;
+}
+.enjiTable{
+	border-collapse: collapse;
+	border: 1px solid #ccc;
+	line-height: 1.5;
+	width:100%;
+}
+.enjiTable th{
+	background-color: lightgrey;
+	font-size: small;
+	white-space: nowrap;
+}
+.enjiTable tr{
+	border: 1px solid #ccc;
+}
+.enjiTable td{
+	text-align: center;
+	font-size: small;
+	white-space: nowrap;
+}
+.enjiTable .td_edit{
+	text-align: right;
+}
+.previoutIllnessTable{
+	width: 60%;
+}
+
+label#beforeBirth{
+	text-align: left;
+}
+
+input.disabled_input,select.disabled_input,textarea.disabled_input{
+	background-color: whitesmoke;
+}
+.fieldset{
+	border:0px;
+}
+
+.validateErrorBox,.beforeValidate{
+	border-radius: 8px;
+	border: red solid 3px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+.beforeValidate{ 
+	border: transparent
+}
+
+.validateError{
+	border:3px solid red;
+}
+.requireError{
+	border:3px solid red;
+}
+.requireErrorButton{
+	border:3px solid red;
+	box-shadow:none;
+	Text-shadow:none;
+}
+.blankError{
+	border:3px solid red;
+}
+.formatError{
+	border:3px solid red;
+}
+
+input[type="file"] {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+
+#child_img_dialog label {
+	padding: 7px 45px;
+	margin: 0 0 10px;
+	background: whitesmoke;
+	color: grey;
+	display: inline-block;
+	cursor: pointer;
+	align-content: center;
+}
+
+.fileclear {
+	display: none;
+	margin: 10px 0 0;
+	text-decoration: underline;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.cp_actab input.postalButton{
+	z-index: 1;
+}
+
+.pINasiBtn,.pIOtherNasiBtn,.vaccinationNasiBtn{
+	width:75px;
+}
+
+.preIllnessDate{
+	width:110px;
+	z-index:999;
+}
+
+/* 土曜日の色設定 */
+td.ui-datepicker-week-end:last-child a.ui-state-default{
+	color: #00f!important;       /* 文字色：青 */
+}
+/* 日曜日の色設定 */
+td.ui-datepicker-week-end:first-child a.ui-state-default{
+	color: #f00!important;       /* 文字色：赤 */
+}
+
+.alertText{
+	border:1px solid red;
+	background-color:lightPink;
+	font-weight:bold;
+	margin-top:1px;
+	margin-bottom:3px;
+	border-radius:5px;
+	padding: 12px 3px 12px 3px;
+	vertical-align: baseline;
+	width:100%;
+	text-align: center;
+}
+
+.menuLabel{
+	line-height: 2;
+	position: relative;
+	display: block;
+	cursor: pointer;
+	background: #808080;
+	font-size:18px;
+	border-radius: 8px;
+	height: 40px;
+	width:100%;
+	padding-top: 5px;
+	margin-top:2px;
+	border-radius: 0px;
+}
+
+.tab_plusminus{
+	position: absolute;
+	top:14%;
+	left: 91%;
+	font-size:x-large;
+	color:#808080;
+}
+
+.tab_plusminus>.icon-plus{
+	position:absolute;
+	top:-3%;
+	left:2%;
+	}
+
+.s_03 .accordion_one {
+	margin-bottom: 2px;
+}
+
+.s_03 .accordion_one .accordion_header {
+	background-color: #808080;
+	color: #fff;
+	font-size: 26px;
+	padding: 10px 11%;
+	text-align: center;
+	position: relative;
+	z-index: +1;
+	cursor: pointer;
+	transition-duration: 0.2s;
+	font-size: 18px;
+}
+
+.s_03 .accordion_one .accordion_inner {
+	display: none;
+	box-sizing: border-box;
+}
+.s_03 .accordion_one .accordion_inner {
+	display: none;
+}
+.s_03 .accordion_one .accordion_inner.stay {
+	display: block;
+}
+
+.registTitleMark{
+	position:relative;
+	top:0px;
+	left:-18px;
+}
+.registTitle{
+	position:relative;
+	top:0px;
+	left:-15px;
+}
+
+.squareMark{
+	height: 20px;
+	float: left;
+	margin: 6px 2px 4px 0px;
+	display:inline-block;
+}

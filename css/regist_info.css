@@ -1,0 +1,15 @@
+.registBtn{
+	margin-left:3px;
+	color:white;
+	border-radius : 6px;
+	border : 1px solid;
+	border-color : #84a819;
+	height:34px;
+	font-weight:bold;
+	text-shadow:0 1px #444444;
+	box-shadow:0 1px #444444;
+	background:#84a819;
+	padding-top: 7px; 
+	width:280px;
+	margin-bottom: 10px;
+}
